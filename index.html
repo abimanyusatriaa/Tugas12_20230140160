@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Peminatan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-card">
+    <h2>Pendaftaran Peminatan</h2>
+    <form>
+      <label>Nama:</label>
+      <input type="text" id="nama" placeholder="Masukkan nama lengkap" />
+
+      <label>NIM:</label>
+      <input type="text" id="nim" placeholder="Masukkan NIM Anda" />
+
+      <p>Peminatan pada bidang:</p>
+      <div class="radio-group">
+        <label><input type="radio" name="peminatan" value="Programming" /> Programming</label>
+        <label><input type="radio" name="peminatan" value="Desain" /> Desain</label>
+        <label><input type="radio" name="peminatan" value="Jaringan" /> Jaringan</label>
+        <label><input type="radio" name="peminatan" value="Data" /> Data</label>
+      </div>
+
+      <label>Alamat:</label>
+      <textarea id="alamat" cols="30" rows="3" placeholder="Masukkan alamat domisili"></textarea>
+
+      <label>Pilih Angkatan</label>
+      <select id="angkatan">
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+      </select>
+
+      <label>Tanggal</label>
+      <input type="date" id="tanggal" />
+
+      <button type="button" onclick="kirimData()">Kirim</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
